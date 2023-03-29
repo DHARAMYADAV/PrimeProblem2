@@ -1,10 +1,14 @@
-
+// prime day-2 code
 
 function prime(num){
+    let counter=0;
     for(let i=0;i<=num;i++){
-        if(num%i){
-            return true;
+        if(num%i==0){
+            counter++;
         }
+    }
+    if(counter==2){
+        return true;
     }
     return false;
 }
@@ -12,7 +16,7 @@ function prime(num){
 let ans=prime(13);
 
 if(ans){
-    console.log("prime")
+    console.log("Prime")
 }else{
-    console.log("not a prime")
+    console.log("Not a prime")
 }
